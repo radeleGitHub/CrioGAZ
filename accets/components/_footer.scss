@@ -1,0 +1,27 @@
+.footer {
+    &__content {
+        font-family: Roboto;
+        background: #323232;
+        height: 125px;
+        margin-top: 97px;
+        
+    }
+
+    &__list {
+        @include flex(center, center);
+        text-align: center;
+    }
+
+    &__item {
+        @include font(400, 14px, #fff);
+        margin-left: 25px;
+        margin-top: 40px;
+
+    }
+
+    &__info {
+        @include font(400, 11px, #DCDCDC);
+        text-align: center;
+        margin-top: 22px;
+    }
+}

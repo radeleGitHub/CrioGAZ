@@ -1,0 +1,59 @@
+
+.header {
+    &__content {
+      text-align: center;
+      margin: 0 auto;
+
+    }
+
+    &__left {
+        font-family: Roboto;
+        display: flex;
+        margin-right: 149px;
+    }
+
+    &__center {
+        margin-right: 188px;
+    }
+
+    &__logo--blue {
+        @include font (900, 36px, #0F4898);
+    }
+
+    &__logo--white {
+        @include font (900, 36px, #ffffff);
+    }
+
+    &__list {
+        @include flex(space-between, center); 
+
+    }
+
+    &__item {
+        font-family: Roboto;
+        margin-left: 20px;
+        @include font (400, 13px, #ffffff);
+    }
+
+    &__line {
+        width: 1920px;
+        border: 1px solid #ffffff;
+        position: absolute;
+        top: 109px;
+    }
+
+    &__info {
+        @include flex(space-between, center);
+        position: absolute;
+        text-align: center;
+        top: 0;
+        left: 20%;
+        margin-top: 33px;
+    }
+
+    &__background {
+        max-width: 1920px;
+        position: relative;
+        margin: 0 auto;
+    }
+}
